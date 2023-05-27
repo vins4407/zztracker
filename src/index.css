@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '~react-vis/dist/style';
+
+@layer utilities {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .splash-screen {
+    background-color: #ced6e0
+  }
+
+  .MuiInputBase-root {
+    color: black;
+  }
+
+  @variants dark {
+    .MuiInputBase-root-dark {
+      color: white !important;
+    }
+
+    .splash-screen-dark {
+      background-color: #2f3542;
+         }
+  }
+}
